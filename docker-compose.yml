@@ -2,7 +2,7 @@
   options-test:
     image: options-test
     environment:
-      - TreKeyCloakSettings__Authority=thisisdocker
+      - TreKeyCloakSettings__Authority=${TreKeyCloakBaseRealmAddress}${TreKeyCloakRealm}
     build:
       context: .
       dockerfile: Dockerfile
