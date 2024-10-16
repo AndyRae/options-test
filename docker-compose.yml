@@ -1,0 +1,9 @@
+﻿services:
+  options-test:
+    image: options-test
+    environment:
+      - TreKeyCloakSettings__Authority=thisisdocker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
