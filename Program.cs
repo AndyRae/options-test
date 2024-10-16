@@ -14,3 +14,4 @@ var treKeyCloakSettings = new TreKeyCloakSettings();
 configuration.Bind(nameof(treKeyCloakSettings), treKeyCloakSettings);
 
 Console.WriteLine($"Authority: {treKeyCloakSettings.Authority}");
+Console.WriteLine($"BaseUrl: {treKeyCloakSettings.BaseUrl}");
